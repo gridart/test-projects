@@ -1,0 +1,65 @@
+ <html><head>
+
+	<style>
+		h1, a, a:hover, a:active, a:visited {
+			 font-family: 'Contrail One', Arial;
+			 font-size : 32px;
+			 font-weight: 400;
+			 color : rgb(16, 89, 154);
+			 padding : 0;
+			 margin:0;
+			 text-decoration: none;
+		}
+		
+		a:hover {
+			color : red;
+		}
+		
+		#content {
+			width: 1300px;
+			height: 700px;
+			margin : 0 auto;
+		}
+		
+		canvas {
+			width : 1300px;
+			height : 700px;
+		}
+		
+	</style>
+	
+	<script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=www.ssaurel.com&amp;callback=_gfp_s_&amp;client=ca-pub-6053497427111977&amp;cookie=ID%3D367ef61697563e4c%3AT%3D1583497941%3AS%3DALNI_MZNEeJLyH85m74UIKqoD78iZMkdrw&amp;crv=1"></script><script src="https://pagead2.googlesyndication.com/pagead/js/r20200303/r20190131/show_ads_impl_fy2019.js" id="google_shimpl"></script><script type="text/javascript">
+	
+		function start(q) {
+			var s = window.screen;
+			var width = q.width = s.width;
+			var height = q.height = s.height;
+			var letters = Array(256).join(1).split('');
+
+			var draw = function () {
+			  q.getContext('2d').fillStyle='rgba(0,0,0,.05)';
+			  q.getContext('2d').fillRect(0,0,width,height);
+			  q.getContext('2d').fillStyle='#0F0';
+			  letters.map(function(y_pos, index){
+			    text = String.fromCharCode(3e4+Math.random()*33);
+			    x_pos = index * 10;
+			    q.getContext('2d').fillText(text, x_pos, y_pos);
+			    letters[index] = (y_pos > 758 + Math.random() * 1e4) ? 0 : y_pos + 10;
+			  });
+			};
+			setInterval(draw, 40);
+		}
+		
+		function onLoad() {
+			var canvas = document.getElementById("canvas");
+			start(canvas);
+		}
+	</script>
+<link rel="preload" href="https://adservice.google.mk/adsid/integrator.js?domain=www.ssaurel.com" as="script"><script type="text/javascript" src="https://adservice.google.mk/adsid/integrator.js?domain=www.ssaurel.com"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.ssaurel.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.ssaurel.com"></script></head>
+<body onload="onLoad();">
+	
+	<div id="content">
+		<canvas id="canvas" width="1024" height="768"></canvas>
+	</div>
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:0px;height:0px;"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_1955565084134" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20200303/r20190131/zrt_lookup.html#" data-ad-client="ca-pub-6053497427111977" style="display: none;"></iframe></html>
